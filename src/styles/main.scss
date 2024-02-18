@@ -38,6 +38,10 @@ body {
 
 .text--big {
     @include text(18px);
+
+    @media (max-width: 768px) {
+        @include title(14px);
+    }
 }
 
 .text {
@@ -50,14 +54,26 @@ body {
 
 .title--big {
     @include title(44px);
+
+    @media (max-width: 768px) {
+        @include title(40px);
+    }
 }
 
 .title {
     @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }
 
 .title--small {
     @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }
 
 .link-text {
@@ -72,8 +88,13 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media (max-width: 768px) {
+        display: block;
+    }
+
     img {
         max-width: 100%;
+        border-radius: 8px;
     }
 
     &__text-container {
