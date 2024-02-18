@@ -1,5 +1,6 @@
 @use 'hero';
 @use 'variaveis';
+@use 'footer';
 
 @font-face {
     font-family: Cachet;
@@ -63,4 +64,23 @@ body {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.sinopse {
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text-container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
 }
